@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <radialGradient id="blush" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fbe3e8"/>
+      <stop offset="55%" stop-color="#f3b8c4"/>
+      <stop offset="100%" stop-color="#c96f83"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9d3a0"/>
+      <stop offset="50%" stop-color="#c9a86a"/>
+      <stop offset="100%" stop-color="#9a7a3c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#gold)"/>
+  <circle cx="80" cy="80" r="70" fill="url(#blush)"/>
+  <circle cx="80" cy="80" r="63" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <text x="80" y="86" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="52" font-style="italic" font-weight="600" fill="#fff">C<tspan font-size="34">N</tspan></text>
+  <text x="80" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" letter-spacing="3.5" fill="#fff">NAIL BY</text>
+  <text x="80" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" letter-spacing="5" fill="#fff" opacity=".9">CHAIMA</text>
+  <g fill="#fff">
+    <path d="M38 44l2.2 5.6 5.6 2.2-5.6 2.2-2.2 5.6-2.2-5.6-5.6-2.2 5.6-2.2z"/>
+    <path d="M122 102l1.7 4.3 4.3 1.7-4.3 1.7-1.7 4.3-1.7-4.3-4.3-1.7 4.3-1.7z"/>
+    <circle cx="118" cy="42" r="2.4"/>
+  </g>
+</svg>
