@@ -254,10 +254,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   const backdrop = document.getElementById('navBackdrop');
-  function closeMenu(){ navLinks.classList.remove('open'); if(backdrop) backdrop.classList.remove('open'); document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); }
-  burger.addEventListener('click', ()=>{ const open = navLinks.classList.toggle('open'); if(backdrop) backdrop.classList.toggle('open', open); document.body.classList.toggle('menu-open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+  function closeMenu(){ navLinks.classList.remove('open'); if(backdrop) backdrop.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  burger.addEventListener('click', ()=>{ const open = navLinks.classList.toggle('open'); if(backdrop) backdrop.classList.toggle('open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   if(backdrop) backdrop.addEventListener('click', closeMenu);
   navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
+  window.addEventListener('scroll', ()=>{ if(navLinks.classList.contains('open')) closeMenu(); }, {passive:true});
 
   const io = new IntersectionObserver(entries=>{
     entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target);} });
