@@ -276,5 +276,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if(lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape'){ closeLightbox(); closeMenu(); } });
 
+  /* ---------- Anti-copy images (text stays copyable) ---------- */
+  document.addEventListener('contextmenu', (e)=>{ if(e.target.closest && e.target.closest('img')) e.preventDefault(); });
+  document.addEventListener('dragstart', (e)=>{ if(e.target && e.target.tagName === 'IMG') e.preventDefault(); });
+
   updateSummary();
 });
