@@ -9,14 +9,23 @@
 <meta property="og:title" content="Chaima Nails — Réservation en ligne 💅">
 <meta property="og:description" content="Pose Gel dès 150 MAD · Vernis Permanent · Manucure. Réservez en 30 secondes sur WhatsApp.">
 <meta property="og:image" content="logo.jpg">
+<meta property="og:site_name" content="Chaima Nails">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chaima Nails — Réservation en ligne 💅">
+<meta name="twitter:description" content="Pose Gel dès 150 MAD · Vernis Permanent · Manucure. Réservez en 30 secondes sur WhatsApp.">
+<meta name="twitter:image" content="logo.jpg">
 <meta name="theme-color" content="#1c1714">
+<link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=7">
 <link rel="icon" href="logo.jpg" type="image/jpeg">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
+<a class="skip-link" href="#reservation" data-i18n="skip">Aller à la réservation</a>
 
 <div class="topbar" data-i18n="topbar">✨ Offre du moment — Pose Gel + Vernis à <strong>150 MAD</strong> seulement · Réponse rapide sur WhatsApp ✨</div>
 
@@ -40,9 +49,10 @@
         <button type="button" data-lang="ar">AR</button>
       </div>
       <a href="#reservation" class="btn btn-dark btn-sm" data-i18n="navBook">Réserver 💅</a>
-      <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger" aria-label="menu" aria-expanded="false" aria-controls="navLinks"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </div>
+  <button class="nav-backdrop" id="navBackdrop" aria-label="Fermer le menu"></button>
 </nav>
 
 <header class="hero" id="accueil">
@@ -64,7 +74,7 @@
     </div>
     <div class="hero-visual reveal">
       <div class="hero-card-main pink-frame">
-        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80&auto=format&fit=crop" alt="Chaima Nails - rose">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80&auto=format&fit=crop" alt="Chaima Nails - rose" fetchpriority="high" decoding="async">
         <div class="float-card float-1">
           <span class="fc-emoji">💅</span>
           <div><strong data-i18n="svc1t">Pose Gel + Vernis</strong><small>150 MAD</small></div>
@@ -75,6 +85,7 @@
   </div>
 </header>
 
+<main id="main">
 <section class="section" id="services">
   <div class="container">
     <div class="sec-head reveal">
@@ -84,7 +95,7 @@
     </div>
     <div class="services-grid reveal">
       <article class="svc-card featured">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Pose Gel"><span class="badge" data-i18n="populaire">Populaire</span></div>
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Pose Gel" loading="lazy" decoding="async"><span class="badge" data-i18n="populaire">Populaire</span></div>
         <div class="svc-body">
           <h3 data-i18n="svc1t">Pose Gel + Vernis</h3>
           <p data-i18n="svc1d">Extension gel + couleur au choix, forme sur-mesure, tenue 3-4 semaines.</p>
@@ -93,7 +104,7 @@
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Vernis Permanent"></div>
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Vernis Permanent" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="svc2t">Vernis Permanent</h3>
           <p data-i18n="svc2d">Semi-permanent sur ongles naturels, brillance 3 semaines.</p>
@@ -102,7 +113,7 @@
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Manucure"></div>
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Manucure" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="svc3t">Manucure Classique</h3>
           <p data-i18n="svc3d">Limage, cuticules, hydratation + vernis classique.</p>
@@ -111,7 +122,7 @@
         </div>
       </article>
       <article class="svc-card">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Remplissage"><span class="badge soft" data-i18n="entretien">Entretien</span></div>
+        <div class="svc-img"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop'" alt="Remplissage" loading="lazy" decoding="async"><span class="badge soft" data-i18n="entretien">Entretien</span></div>
         <div class="svc-body">
           <h3 data-i18n="svc4t">Remplissage Gel</h3>
           <p data-i18n="svc4d">Repousse comblée, nouvelle couleur, comme neuves.</p>
@@ -130,11 +141,11 @@
       <h2><span data-i18n="galH1">Nos dernières</span> <em data-i18n="galH2">créations</em></h2>
     </div>
     <div class="gallery reveal" id="gallery">
-      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&q=80&auto=format&fit=crop" alt="Nails rose">
-      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop" alt="Nails 1">
-      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80&auto=format&fit=crop" alt="Nails 3">
-      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80&auto=format&fit=crop" alt="Nails 4">
-      <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?w=600&q=80&auto=format&fit=crop" alt="Nails 5">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&q=80&auto=format&fit=crop" alt="Nails rose" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop" alt="Nails 1" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80&auto=format&fit=crop" alt="Nails 3" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80&auto=format&fit=crop" alt="Nails 4" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?w=600&q=80&auto=format&fit=crop" alt="Nails 5" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -146,9 +157,9 @@
       <h2><span data-i18n="bookH1">Réservez en</span> <em data-i18n="bookH2">30 secondes</em></h2>
       <p data-i18n="bookP">Choisissez service, date & heure, confirmez sur WhatsApp. Sans acompte.</p>
       <ul class="steps-mini">
-        <li><span class="mi">💅</span><div><strong>01 — Service</strong><span data-i18n="step1">4 rituels dès 50 MAD</span></div></li>
-        <li><span class="mi">📅</span><div><strong>02 — Date & heure</strong><span data-i18n="step2">Créneaux 10h → 18h, 7j/7 sur RDV</span></div></li>
-        <li><span class="mi">💬</span><div><strong>03 — WhatsApp</strong><span data-i18n="step3">Confirmation instantanée</span></div></li>
+        <li><span class="mi" aria-hidden="true">💅</span><div><strong>01 — <span data-i18n="step1t">Service</span></strong><span data-i18n="step1">4 rituels dès 50 MAD</span></div></li>
+        <li><span class="mi" aria-hidden="true">📅</span><div><strong>02 — <span data-i18n="step2t">Date & heure</span></strong><span data-i18n="step2">Créneaux 10h → 18h, 7j/7 sur RDV</span></div></li>
+        <li><span class="mi" aria-hidden="true">💬</span><div><strong>03 — <span data-i18n="step3t">WhatsApp</span></strong><span data-i18n="step3">Confirmation instantanée</span></div></li>
       </ul>
       <div class="trust-chips">
         <span>⚡ <b data-i18n="trustA">Réponse rapide</b></span>
@@ -158,15 +169,15 @@
     </div>
 
     <form id="bookingForm" class="booking-card reveal" novalidate>
-      <div class="booking-progress"><div id="progressBar"></div></div>
+      <div class="booking-progress" role="progressbar" aria-label="Progression" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10"><div id="progressBar"></div></div>
       <div class="form-head">
         <span class="form-ico">✨</span>
         <div><h3 data-i18n="formTitle">Prendre rendez-vous</h3><small data-i18n="formSub">Confirmation humaine en quelques minutes</small></div>
       </div>
 
       <div class="form-group">
-        <label><span class="step-n">1</span><i class="li">💅</i><span data-i18n="fService">Choisissez un service</span></label>
-        <div class="services-select" id="servicesGrid">
+        <span class="group-label" id="serviceLabel"><span class="step-n" aria-hidden="true">1</span><i class="li" aria-hidden="true">💅</i><span data-i18n="fService">Choisissez un service</span></span>
+        <div class="services-select" id="servicesGrid" role="group" aria-labelledby="serviceLabel">
           <button type="button" class="service-card" data-service="Pose Gel + Vernis" data-price="150 MAD">
             <i>✨</i><strong data-i18n="svc1t">Pose Gel + Vernis</strong><span>150 MAD</span><b class="tick">✓</b>
           </button>
@@ -185,24 +196,24 @@
 
       <div class="form-row">
         <div class="form-group">
-          <label for="date"><span class="step-n">2</span><i class="li">📅</i><span data-i18n="fDate">Date</span></label>
+          <label for="date"><span class="step-n" aria-hidden="true">2</span><i class="li" aria-hidden="true">📅</i><span data-i18n="fDate">Date</span></label>
           <input type="date" id="date" required>
         </div>
         <div class="form-group">
-          <label for="name"><span class="step-n">4</span><i class="li">👤</i><span data-i18n="fName">Votre nom</span></label>
+          <label for="name"><span class="step-n" aria-hidden="true">4</span><i class="li" aria-hidden="true">👤</i><span data-i18n="fName">Votre nom</span></label>
           <input type="text" id="name" placeholder="Ex : Salma" autocomplete="name" required>
         </div>
       </div>
 
       <div class="form-group" id="timeContainer" style="display:none">
-        <label><span class="step-n">3</span><i class="li">⏰</i><span data-i18n="fTime">Heure disponible</span></label>
-        <div class="time-grid" id="timeGrid"></div>
+        <span class="group-label" id="timeLabel"><span class="step-n" aria-hidden="true">3</span><i class="li" aria-hidden="true">⏰</i><span data-i18n="fTime">Heure disponible</span></span>
+        <div class="time-grid" id="timeGrid" role="group" aria-labelledby="timeLabel"></div>
         <input type="hidden" id="selectedTime">
       </div>
 
       <div class="form-group">
-        <label for="phone"><i class="li">📞</i><span data-i18n="fPhone">Téléphone</span> <small data-i18n="optional">(optionnel)</small></label>
-        <input type="tel" id="phone" placeholder="06 XX XX XX XX" autocomplete="tel">
+        <label for="phone"><i class="li" aria-hidden="true">📞</i><span data-i18n="fPhone">Téléphone</span> <small data-i18n="optional">(optionnel)</small></label>
+        <input type="tel" id="phone" placeholder="06 XX XX XX XX" autocomplete="tel" inputmode="tel" dir="ltr">
       </div>
 
       <div class="summary" id="summary">
@@ -249,6 +260,7 @@
     </a>
   </div>
 </section>
+</main>
 
 <footer class="footer">
   <div class="container foot-grid">
@@ -275,9 +287,9 @@
 </footer>
 
 <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp">✆<span class="wa-pulse"></span></a>
-<div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt=""><span>✕</span></div>
-<div class="toast" id="toast"></div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo"><img id="lightboxImg" src="" alt=""><button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="script.js?v=9"></script>
+<script src="script.js?v=13"></script>
 </body>
 </html>

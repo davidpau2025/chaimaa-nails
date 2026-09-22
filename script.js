@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- I18N FR / EN / AR ---------- */
   const I18N = {
     fr: {
+      skip: "Aller à la réservation",
       topbar: "✨ Offre du moment — Pose Gel + Vernis à <strong>150 MAD</strong> seulement · Réponse rapide sur WhatsApp ✨",
       navHome: "Accueil", navServices: "Services", navGallery: "Galerie", navFaq: "FAQ", navBook: "Réserver 💅",
       pill: "Nail artist · Marrakech · 4.9/5 ★★★★★", h1a: "Sublimez vos mains,", h1b: "révélez votre éclat.",
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       galEyebrow: "Portfolio", galH1: "Nos dernières", galH2: "créations",
       bookEyebrow: "Réservation", bookH1: "Réservez en", bookH2: "30 secondes",
       bookP: "Choisissez service, date & heure, confirmez sur WhatsApp. Sans acompte.",
+      step1t: "Service", step2t: "Date & heure", step3t: "WhatsApp",
       step1: "4 rituels dès 50 MAD", step2: "Créneaux 10h → 18h, 7j/7 sur RDV", step3: "Confirmation instantanée",
       trustA: "Réponse rapide", trustB: "Sans acompte",
       formTitle: "Prendre rendez-vous", formSub: "Confirmation humaine en quelques minutes",
@@ -30,10 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
       q1: "Comment réserver ?", a1: "Choisissez service, date et heure, puis cliquez « Confirmer par WhatsApp ».",
       q2: "Combien de temps tient la pose ?", a2: "Gel : 3-4 semaines. Permanent : 2-3 semaines. Remplissage conseillé (100 MAD).",
       q3: "Quels sont les horaires ?", a3: "De 10h à 18h, 7j/7 sur rendez-vous.",
-      ctaH: "Une question ? Écrivez-nous", ctaP: "Réponse rapide sur WhatsApp — on vous confirme votre créneau en quelques minutes.",
+      ctaH: "Une question ? Écrivez-nous 💬", ctaP: "Réponse rapide sur WhatsApp — on vous confirme votre créneau en quelques minutes.",
       ctaBtn: "Discuter sur WhatsApp", follow: "Suivez-nous", findUs: "Nous trouver sur Maps"
     },
     en: {
+      skip: "Skip to booking",
       topbar: "✨ Special offer — Gel Set + Polish for only <strong>150 MAD</strong> · Fast reply on WhatsApp ✨",
       navHome: "Home", navServices: "Services", navGallery: "Gallery", navFaq: "FAQ", navBook: "Book now 💅",
       pill: "Nail artist · Marrakech · 4.9/5 ★★★★★", h1a: "Pamper your hands,", h1b: "reveal your glow.",
@@ -50,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       galEyebrow: "Portfolio", galH1: "Our latest", galH2: "creations",
       bookEyebrow: "Booking", bookH1: "Book in", bookH2: "30 seconds",
       bookP: "Pick service, date & time, confirm on WhatsApp. No deposit.",
+      step1t: "Service", step2t: "Date & time", step3t: "WhatsApp",
       step1: "4 rituals from 50 MAD", step2: "Slots 10am → 6pm, 7 days on appointment", step3: "Instant confirmation",
       trustA: "Fast reply", trustB: "No deposit",
       formTitle: "Book an appointment", formSub: "Human confirmation in minutes",
@@ -60,10 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
       q1: "How to book?", a1: "Pick service, date and time, then click “Confirm via WhatsApp”.",
       q2: "How long does it last?", a2: "Gel: 3-4 weeks. Permanent: 2-3 weeks. Refill advised (100 MAD).",
       q3: "What are the hours?", a3: "10am to 6pm, 7 days on appointment.",
-      ctaH: "A question? Message us", ctaP: "Fast reply on WhatsApp — we confirm your slot in minutes.",
+      ctaH: "A question? Message us 💬", ctaP: "Fast reply on WhatsApp — we confirm your slot in minutes.",
       ctaBtn: "Chat on WhatsApp", follow: "Follow us", findUs: "Find us on Maps"
     },
     ar: {
+      skip: "تخطي إلى الحجز",
       topbar: "✨ عرض خاص — تركيب الجل + صباغة بـ <strong>150 درهم</strong> فقط · رد سريع على واتساب ✨",
       navHome: "الرئيسية", navServices: "الخدمات", navGallery: "المعرض", navFaq: "أسئلة", navBook: "احجزي 💅",
       pill: "خبيرة أظافر · مراكش · 4.9/5 ★★★★★", h1a: "جمّلي يديكِ،", h1b: "وأبرزي إشراقتك.",
@@ -80,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       galEyebrow: "أعمالنا", galH1: "آخر", galH2: "إبداعاتنا",
       bookEyebrow: "الحجز", bookH1: "احجزي في", bookH2: "30 ثانية",
       bookP: "اختاري الخدمة والتاريخ والوقت، وأكدي على واتساب. بدون عربون.",
+      step1t: "الخدمة", step2t: "التاريخ والوقت", step3t: "واتساب",
       step1: "4 طقوس من 50 درهم", step2: "من 10h إلى 18h، كل أيام الأسبوع بالموعد", step3: "تأكيد فوري",
       trustA: "رد سريع", trustB: "بدون عربون",
       formTitle: "خذي موعد", formSub: "سنؤكد موعدك خلال دقائق",
@@ -90,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       q1: "كيفاش نحجز؟", a1: "اختاري الخدمة والتاريخ والوقت ثم ضغطي «التأكيد عبر واتساب».",
       q2: "شحال كتبقى التركيبة؟", a2: "الجل: 3-4 أسابيع. الدائمة: 2-3 أسابيع. التعبئة منصح بها (100 درهم).",
       q3: "شنو هما الأوقات؟", a3: "من 10h إلى 18h، كل أيام الأسبوع بالموعد.",
-      ctaH: "عندك سؤال؟ كتبي لينا", ctaP: "رد سريع على واتساب — نأكدو ليك الموعد في دقائق.",
+      ctaH: "عندك سؤال؟ كتبي لينا 💬", ctaP: "رد سريع على واتساب — نأكدو ليك الموعد في دقائق.",
       ctaBtn: "دردشي على واتساب", follow: "Suivez-nous", findUs: "Nous trouver sur Maps"
     }
   };
@@ -138,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(selectedTimeInput.value) p += 20;
     if(document.getElementById('name').value.trim().length>1) p += 20;
     progressBar.style.width = p + '%';
+    progressBar.parentElement.setAttribute('aria-valuenow', p);
   }
   function updateSummary(){
     const card = document.querySelector('.service-card.active');
@@ -152,10 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   serviceCards.forEach(card=>{
+    card.setAttribute('aria-pressed', card.classList.contains('active') ? 'true' : 'false');
     card.addEventListener('click', ()=>{
-      serviceCards.forEach(c=>c.classList.remove('active'));
+      serviceCards.forEach(c=>{ c.classList.remove('active'); c.setAttribute('aria-pressed','false'); c.classList.remove('input-error'); });
       card.classList.add('active');
+      card.setAttribute('aria-pressed','true');
       selectedServiceInput.value = card.dataset.service;
+      document.getElementById('servicesGrid').classList.remove('input-error');
       updateSummary();
     });
   });
@@ -169,8 +179,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const todayStr = new Date().toISOString().split('T')[0];
+  const maxD = new Date(); maxD.setFullYear(maxD.getFullYear()+1);
+  const maxStr = maxD.toISOString().split('T')[0];
   dateInput.setAttribute('min', todayStr);
+  dateInput.setAttribute('max', maxStr);
   dateInput.addEventListener('change', ()=>{
+    if(dateInput.value && dateInput.value < todayStr){
+      dateInput.value = '';
+      showToast(lang==='ar'?'التاريخ فات، اختاري نهار جديد 📅':lang==='en'?'That date has passed 📅':'Cette date est passée 📅');
+    }
+    dateInput.classList.remove('input-error');
     if(dateInput.value){ timeContainer.style.display = 'block'; generateTimeSlots(); }
     else timeContainer.style.display = 'none';
     updateSummary();
@@ -186,28 +204,41 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.type = 'button';
       btn.className = 'time-btn';
       btn.textContent = time;
+      btn.setAttribute('aria-pressed','false');
       const h = parseInt(time.split(':')[0],10);
-      if(isToday && h <= nowH){ btn.classList.add('old'); btn.title = 'passed'; }
+      if(isToday && h <= nowH){ btn.classList.add('old'); btn.title = 'passed'; btn.setAttribute('aria-disabled','true'); }
       else btn.addEventListener('click', ()=>{
-        document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('active'));
+        document.querySelectorAll('.time-btn').forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed','true');
         selectedTimeInput.value = time;
+        timeGrid.classList.remove('input-error');
         updateSummary();
       });
       timeGrid.appendChild(btn);
     });
     updateSummary();
   }
-  document.getElementById('name').addEventListener('input', updateSummary);
+  document.getElementById('name').addEventListener('input', (e)=>{ e.target.classList.remove('input-error'); updateSummary(); });
 
   bookingForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     const service = selectedServiceInput.value;
     const date = dateInput.value;
     const time = selectedTimeInput.value;
-    const name = document.getElementById('name').value.trim();
+    const nameEl = document.getElementById('name');
+    const name = nameEl.value.trim();
     const phone = document.getElementById('phone').value.trim();
-    if(!service || !date || !time || name.length<2){ showToast(lang==='ar'?'عمري جميع الخانات 💅':lang==='en'?'Please complete all fields 💅':'Veuillez tout remplir 💅'); return; }
+    let firstBad = null;
+    document.getElementById('servicesGrid').classList.toggle('input-error', !service);
+    if(!service) firstBad = firstBad || document.querySelector('.service-card');
+    dateInput.classList.toggle('input-error', !date);
+    if(!date) firstBad = firstBad || dateInput;
+    timeGrid.classList.toggle('input-error', !!date && !time);
+    if(date && !time) firstBad = firstBad || timeGrid.querySelector('.time-btn:not(.old)') || timeGrid;
+    nameEl.classList.toggle('input-error', name.length<2);
+    if(name.length<2) firstBad = firstBad || nameEl;
+    if(firstBad){ showToast(lang==='ar'?'عمري جميع الخانات 💅':lang==='en'?'Please complete all fields 💅':'Veuillez tout remplir 💅'); if(firstBad.focus) firstBad.focus({preventScroll:false}); if(firstBad.scrollIntoView) firstBad.scrollIntoView({behavior:'smooth',block:'center'}); return; }
     const formattedDate = new Date(date+'T12:00:00').toLocaleDateString(lang==='ar'?'ar-MA':lang==='en'?'en-GB':'fr-FR',{weekday:'long',day:'numeric',month:'long'});
     const card = document.querySelector('.service-card.active');
     const price = card ? card.dataset.price : '';
@@ -216,14 +247,17 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast('WhatsApp… ✨');
   });
 
-  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Bonjour Chaima, je veux réserver !')}`;
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('السلام عليكم شيماء، بغيت نحجز موعد 💅')}`;
   document.getElementById('waFloat').href = waLink;
   document.getElementById('waBottom').href = waLink;
 
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', ()=>navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+  const backdrop = document.getElementById('navBackdrop');
+  function closeMenu(){ navLinks.classList.remove('open'); if(backdrop) backdrop.classList.remove('open'); document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); }
+  burger.addEventListener('click', ()=>{ const open = navLinks.classList.toggle('open'); if(backdrop) backdrop.classList.toggle('open', open); document.body.classList.toggle('menu-open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
+  if(backdrop) backdrop.addEventListener('click', closeMenu);
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
 
   const io = new IntersectionObserver(entries=>{
     entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target);} });
@@ -232,10 +266,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  function closeLightbox(){ lightbox.classList.remove('show'); lightboxImg.src = ''; }
   document.querySelectorAll('#gallery img').forEach(img=>{
-    img.addEventListener('click', ()=>{ lightboxImg.src = img.src.replace('w=600','w=1200'); lightbox.classList.add('show'); });
+    img.addEventListener('click', ()=>{ lightboxImg.src = img.src.replace('w=600','w=1200'); lightboxImg.alt = img.alt || 'Nails'; lightbox.classList.add('show'); if(lightboxClose) lightboxClose.focus({preventScroll:true}); });
   });
-  lightbox.addEventListener('click', ()=>lightbox.classList.remove('show'));
+  lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox || (e.target !== lightboxImg)) closeLightbox(); });
+  if(lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape'){ closeLightbox(); closeMenu(); } });
 
   updateSummary();
 });
