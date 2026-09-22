@@ -257,6 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeMenu(){ navLinks.classList.remove('open'); if(backdrop) backdrop.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
   burger.addEventListener('click', ()=>{ const open = navLinks.classList.toggle('open'); if(backdrop) backdrop.classList.toggle('open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   if(backdrop) backdrop.addEventListener('click', closeMenu);
+  const menuClose = document.getElementById('menuClose');
+  if(menuClose) menuClose.addEventListener('click', closeMenu);
   navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
   window.addEventListener('scroll', ()=>{ if(navLinks.classList.contains('open')) closeMenu(); }, {passive:true});
 
